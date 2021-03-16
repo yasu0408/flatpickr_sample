@@ -1,2 +1,4 @@
-<h1>Calendars#new</h1>
-<p>Find me in app/views/calendars/new.html.erb</p>
+<%= form_with model: @calendar do |form| %>
+  <input id ="calendar_form" type="text" name="calendar[date]" readonly="readonly" >
+  <%= form.submit "送信" %>
+<% end %>
